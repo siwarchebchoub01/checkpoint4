@@ -1,0 +1,16 @@
+ FUNCTION palindrome(chaine:STRING,d,f:INTEGER) :INTEGER
+VAR
+    
+BEGIN
+IF (chaine[d]#chaine[f]) THEN
+    return 0;
+END_IF
+ELSE    
+    IF (d>=f) THEN
+        return 1;
+    END_IF
+    
+    
+END_IF
+ELSE
+return palindrome(chaine,d+1,f-1);
